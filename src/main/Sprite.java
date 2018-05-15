@@ -4,7 +4,6 @@ import javax.swing.*;
 import java.awt.*;
 
 public class Sprite {
-
     protected int x;
     protected int y;
     protected int width;
@@ -18,15 +17,20 @@ public class Sprite {
         visible = true;
     }
 
+    protected void getImageDimensions() {
+        width = image.getWidth(null);
+        height = image.getHeight(null);
+    }
+
     protected void loadImage(String imageName) {
         ImageIcon imageIcon = new ImageIcon(imageName);
         image = imageIcon.getImage();
     }
 
-    protected void getImageDimensions() {
-        width = image.getWidth(null);
-        height = image.getHeight(null);
+    public Image getImage() {
+        return image;
     }
+
 
     public int getX() {
         return x;
@@ -36,15 +40,15 @@ public class Sprite {
         return y;
     }
 
-    public Image getImage() {
-        return image;
-    }
-
     public boolean isVisible() {
         return visible;
     }
 
     public void setVisible(boolean visible) {
         this.visible = visible;
+    }
+
+    public Rectangle getBounds() {
+        return new Rectangle(x, y, width, height);
     }
 }

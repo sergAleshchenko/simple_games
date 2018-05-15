@@ -1,7 +1,5 @@
 package main;
 
-import javax.swing.*;
-import java.awt.*;
 import java.awt.event.KeyEvent;
 import java.util.ArrayList;
 import java.util.List;
@@ -15,12 +13,11 @@ public class SpaceShip extends Sprite {
     public SpaceShip(int x, int y) {
         super(x, y);
 
-        initSpaceShip();
+        initCraft();
     }
 
-    private void initSpaceShip() {
+    private void initCraft() {
         missiles = new ArrayList<>();
-
         loadImage("C:\\Users\\Tom\\IdeaProjects\\simple_games\\src\\images\\craft.png");
         getImageDimensions();
     }
@@ -28,6 +25,14 @@ public class SpaceShip extends Sprite {
     public void move() {
         x += dx;
         y += dy;
+
+        if (x < 1) {
+            x = 1;
+        }
+
+        if (y < 1) {
+            y = 1;
+        }
     }
 
 
