@@ -1,4 +1,6 @@
-package main;
+package main.examples;
+
+import main.Board;
 
 import javax.swing.*;
 import java.awt.*;

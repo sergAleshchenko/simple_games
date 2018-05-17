@@ -1,29 +1,30 @@
-package main;
+package main.examples;
 
+import main.Board;
 
 import javax.swing.*;
 import java.awt.*;
 
-public class ShootingMissilesEx extends JFrame{
-    public ShootingMissilesEx() {
+public class SwingTimerEx extends JFrame {
+    public SwingTimerEx() {
         initUI();
     }
 
     private void initUI() {
         add(new Board());
 
-        setSize(400, 300);
         setResizable(false);
+        pack();
 
-        setTitle("Shooting missiles");
+        setTitle("Star");
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 
     public static void main(String[] args) {
         EventQueue.invokeLater(() -> {
-            ShootingMissilesEx shootingMissilesEx = new ShootingMissilesEx();
-            shootingMissilesEx.setVisible(true);
+            SwingTimerEx swingTimerEx = new SwingTimerEx();
+            swingTimerEx.setVisible(true);
         });
     }
 }
