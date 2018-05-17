@@ -1,6 +1,6 @@
-package main.examples;
+package main.space.examples;
 
-import main.Board;
+import main.space.entities.Board;
 
 import javax.swing.*;
 import java.awt.*;

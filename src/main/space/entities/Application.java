@@ -1,29 +1,28 @@
-package main.examples;
-
-import main.Board;
+package main.space.entities;
 
 import javax.swing.*;
 import java.awt.*;
 
-public class ImageExample extends JFrame{
-    public ImageExample() {
+public class Application extends JFrame {
+
+    public Application() {
         initUI();
     }
 
     private void initUI() {
         add(new Board());
+        setSize(250, 200);
 
-        pack();
-
-        setTitle("Bardejov");
+        setTitle("Application");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
     }
 
     public static void main(String[] args) {
         EventQueue.invokeLater(() -> {
-            ImageExample imageExample = new ImageExample();
-            imageExample.setVisible(true);
+            Application ex = new Application();
+            ex.setVisible(true);
         });
+
     }
 }

@@ -1,4 +1,4 @@
-package main;
+package main.space.entities;
 
 import javax.swing.*;
 import java.awt.*;

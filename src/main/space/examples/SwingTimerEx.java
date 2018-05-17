@@ -1,29 +1,30 @@
-package main.examples;
+package main.space.examples;
 
-import main.Board;
+import main.space.entities.Board;
 
 import javax.swing.*;
 import java.awt.*;
 
-public class CollisionEx extends JFrame {
-    public CollisionEx() {
+public class SwingTimerEx extends JFrame {
+    public SwingTimerEx() {
         initUI();
     }
 
     private void initUI() {
         add(new Board());
+
         setResizable(false);
         pack();
 
-        setTitle("Collision");
+        setTitle("Star");
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 
     public static void main(String[] args) {
         EventQueue.invokeLater(() -> {
-            CollisionEx collisionEx = new CollisionEx();
-            collisionEx.setVisible(true);
+            SwingTimerEx swingTimerEx = new SwingTimerEx();
+            swingTimerEx.setVisible(true);
         });
     }
 }

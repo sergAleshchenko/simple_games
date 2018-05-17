@@ -1,4 +1,4 @@
-package main;
+package main.space.entities;
 
 public class Alien extends Sprite {
     private final int INITIAL_X = 400;

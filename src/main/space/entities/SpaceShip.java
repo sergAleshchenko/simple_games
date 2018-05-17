@@ -1,4 +1,4 @@
-package main;
+package main.space.entities;
 
 import java.awt.event.KeyEvent;
 import java.util.ArrayList;

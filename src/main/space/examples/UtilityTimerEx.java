@@ -1,12 +1,12 @@
-package main.examples;
+package main.space.examples;
 
-import main.Board;
+import main.space.entities.Board;
 
 import javax.swing.*;
 import java.awt.*;
 
-public class ThreadAnimationEx extends JFrame {
-    public ThreadAnimationEx() {
+public class UtilityTimerEx extends JFrame {
+    public UtilityTimerEx() {
         initUI();
     }
 
@@ -23,8 +23,8 @@ public class ThreadAnimationEx extends JFrame {
 
     public static void main(String[] args) {
         EventQueue.invokeLater(() -> {
-            JFrame threadAnimationEx = new ThreadAnimationEx();
-            threadAnimationEx.setVisible(true);
+            JFrame utilityTimerEx = new UtilityTimerEx();
+            utilityTimerEx.setVisible(true);
         });
     }
 }
